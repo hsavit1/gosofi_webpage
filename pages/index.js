@@ -10,6 +10,7 @@ export default (props) => (
     </div>
     <style jsx>{`
       .testing{
+        margin-top:50px;
         height: 200vh;
         margin-bottom: 20px;
       }

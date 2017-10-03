@@ -1,5 +1,5 @@
 {
-  "name": "with-apollo-and-redux",
+  "name": "GoSOFI",
   "version": "2.0.0",
   "scripts": {
     "dev": "next",
@@ -13,6 +13,7 @@
     "prop-types": "^15.5.8",
     "react": "15.6.2",
     "react-apollo": "^1.1.3",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "15.6.2",
     "reactstrap": "^4.8.0",
     "redux": "^3.6.0"

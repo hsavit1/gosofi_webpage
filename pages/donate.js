@@ -5,5 +5,12 @@ export default (props) => (
   <App>
     <Header pathname={props.url.pathname} />
     <p>Test Donate Page</p>
+    <style jsx>{`
+      p{
+        margin-top: 50px;
+      }
+      `}
+    </style>
   </App>
+
 )
