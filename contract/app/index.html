@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container margin-top-3">
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lend Vault Total Ever Funded</td>
+          <td id="token-fund"></td>
+        </tr>
+        <tr>
+          <td>Fund Left</td>
+          <td id="fund-left"></td>
+        </tr>
+        <tr>
+          <td>Fund Lent</td>
+          <td id="fund-lent"></td>
+        </tr>
+        <tr>
+          <td>Fund Owed</td>
+          <td id="fund-owed"></td>
+        </tr>
+        <tr>
+          <td>Fund Paid</td>
+          <td id="fund-paid"></td>
+        </tr>
+        <tr>
+          <td>Fund Return</td>
+          <td id="fund-return"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+  <div class="col-sm-10">
+      <input id="fund-amount" type="number" class="form-control" />
+  </div>
+  <button class="btn btn-primary col-sm-2" onclick="fundVault()">Fund Vault</button>
+
+  <br /><br />
+
+  <div class="col-sm-10">
+      <input id="funds-requested" type="number" class="form-control" />
+  </div>
+  <button class="btn btn-primary  col-sm-2" onclick="borrowFunds()">Borrow Funds</button>
+
+  <br /><br />
+
+  <div class="col-sm-10">
+      <input id="payment-amount" type="number" class="form-control" />
+  </div>
+  <button class="btn btn-primary  col-sm-2" onclick="makePayment()">Make Payment</button>
+
+  <br /><br />
+
+  <!-- <div class="col-sm-10">
+      <input id="fund-amount" type="number" class="form-control" />
+  </div>
+  <button class="btn btn-primary  col-sm-2" onclick="getProperties()">Get Properties</button>-->
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
