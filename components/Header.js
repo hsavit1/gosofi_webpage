@@ -7,7 +7,7 @@ export default ({ pathname }) => (
 <header>
   <Head>
     <link href="/static/css/Header.css" rel="stylesheet" />
-     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   </Head>
 
   <div className="Header">
@@ -32,11 +32,6 @@ export default ({ pathname }) => (
       </Link>
     </div>
   </div>
-
-<style jsx>{`
-`}</style>
-
-
 </header>
 
 

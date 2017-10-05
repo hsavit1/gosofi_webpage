@@ -20,8 +20,9 @@ header {
   padding-right: 20px;
 }
 .RightJustifiedMenu a{
-  margin-right: 45px;
-
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 18px;
 }
 .LogoContainer{
   padding-left: 45px;
@@ -35,17 +36,53 @@ a {
   font-size: 16px;
   text-decoration: none;
   color: white;
-  padding-bottom: 18px;
   font-weight: 300;
   font-style: normal;
+
 }
 a:hover{
   color: #0099ff;
 }
-.rightJustified{
-  justify-content: flex-end;
-}
+
 .is-active {
   border-bottom: 3px solid #0099ff;
   color: #0099ff;
+}
+
+@media (max-width: 768px){
+  .Logo{
+    max-height: 30px !important ;
+
+  }
+  .LogoContainer{
+    padding-left: 0px;
+  }
+  .RightJustifiedMenu a{
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+}
+@media (max-width: 599px) and (min-width: 0px){
+.RightJustifiedMenu {
+    flex-grow: 1;
+    width: auto;
+    -webkit-flex-grow: 1;
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  margin-left: 15px;
+  padding-top: 5px;
+  -webkit-mask-image: linear-gradient(to right,
+    transparent, black 20px, black 90%, transparent);
+}
+}
+@media (max-width: 414px){
+  .Logo{
+    max-height: 25px !important ;
+  }
+  .RightJustifiedMenu a{
+    padding-left: 8px;
+    padding-right: 8px;
+
+  }
 }

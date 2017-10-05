@@ -20,7 +20,8 @@
     "react-dom": "15.6.2",
     "react-fela": "^5.0.2",
     "reactstrap": "^4.8.0",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "truffle": "^3.4.11"
   },
   "author": "",
   "license": "ISC"

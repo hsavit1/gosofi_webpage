@@ -18,9 +18,6 @@ export default ({ children }) => (
         overflow-x: hidden;
         position: relative;
       }
-      a {
-        color: #22BAD9;
-      }
       p {
         font-size: 14px;
         line-height: 24px;

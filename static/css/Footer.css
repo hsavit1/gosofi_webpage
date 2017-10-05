@@ -1,0 +1,94 @@
+@media (min-width: 980px){
+section{
+    order: -1;
+    width: calc(100% / 3);
+    -webkit-order: -1;
+}
+}
+
+
+@media (max-width: 979px){
+section{
+    text-align: center;
+    padding-top: 40px;
+    order: 1;
+    margin-left: 0px !important;
+}
+}
+@media (max-width: 979px){
+.FooterLinks{
+  justify-content: center;
+
+    order: -1
+}
+}
+@media (max-width: 979px){
+.FooterContainer{
+  flex-direction: column;
+  overflow-y: auto;
+}
+}
+@media (max-width: 979px){
+.FooterLinks{
+
+  width: 100% !important;
+}
+}
+@media (max-width: 360px){
+.Mini-Col{
+  padding-left: 0px;
+}
+}
+footer{
+  padding-top:10px;
+  padding-bottom: 50px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: rgb(32, 35, 42)
+}
+.FooterSpacer{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.FooterContainer{
+  display: flex;
+  border-sizing: border-box;
+}
+.FooterLinks{
+  display: flex;
+  flex-wrap: wrap;
+  width:50%;
+}
+.Mini-Col{
+  padding-top:40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  width: 50% !important;
+}
+.FooterLogo{
+  max-height: 50px;
+
+}
+section{
+  padding-top: 40px;
+  order: -1;
+  color: #A9A9A9;
+    margin-left: 20px;
+}
+div {
+  color: #A9A9A9;
+
+}
+
+footer a{
+  padding-bottom: 18px;
+}
+.Title{
+  line-height: 3;
+  text-transform: uppercase;
+}
