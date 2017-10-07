@@ -1,0 +1,180 @@
+{
+  "contract_name": "lendVault",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fundsRequestedInWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "borrowFunds",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenFund",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_paymentInWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "makePayment",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundLent",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundPaid",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundLeft",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundOwed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "borrowersInfo",
+      "outputs": [
+        {
+          "name": "borrowerAddress",
+          "type": "address"
+        },
+        {
+          "name": "tokensBorrowed",
+          "type": "uint256"
+        },
+        {
+          "name": "tokensOwed",
+          "type": "uint256"
+        },
+        {
+          "name": "initialized",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundReturn",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getProperties",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[6]"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "fundVault",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6000600181905560028190556003819055600481905560058190556006555b5b6104078061003f6000396000f300606060405236156100ac5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166304c08fbd81146100b05780633d2d8263146100c85780635114cb52146100ed5780635f7d1f0f146100fa5780638dd4d8c71461011f578063901d22c714610144578063baf0328514610169578063c56e4a891461018e578063e01c5d0d146101fd578063ec0cfd0b14610222578063f7800e691461026e575b5b5b005b34156100bb57600080fd5b6100ac600435610278565b005b34156100d357600080fd5b6100db6102d3565b60405190815260200160405180910390f35b6100ac6004356102d9565b005b341561010557600080fd5b6100db6102f6565b60405190815260200160405180910390f35b341561012a57600080fd5b6100db6102fc565b60405190815260200160405180910390f35b341561014f57600080fd5b6100db610302565b60405190815260200160405180910390f35b341561017457600080fd5b6100db610308565b60405190815260200160405180910390f35b341561019957600080fd5b6101ba73ffffffffffffffffffffffffffffffffffffffff6004351661030e565b60405173ffffffffffffffffffffffffffffffffffffffff9094168452602084019290925260408084019190915290151560608301526080909101905180910390f35b341561020857600080fd5b6100db61034f565b60405190815260200160405180910390f35b341561022d57600080fd5b610235610355565b604051808260c080838360005b8381101561025b5780820151818401525b602001610242565b5050505090500191505060405180910390f35b6100ac61039d565b005b73ffffffffffffffffffffffffffffffffffffffff331681156108fc0282604051600060405180830381858888f1935050505015156102b657600080fd5b600280548290039055600480548201905560038054820190555b50565b60015481565b600280548201905560048054829003905560058054820190555b50565b60035481565b60055481565b60025481565b60045481565b600060208190529081526040902080546001820154600283015460039093015473ffffffffffffffffffffffffffffffffffffffff90921692909160ff1684565b60065481565b61035d6103b4565b60c0604051908101604052806001548152602001600254815260200160035481526020016004548152602001600554815260200160065481525090505b90565b60028054349081019091556001805490910190555b565b60c06040519081016040526006815b60008152602001906001900390816103c357905050905600a165627a7a7230582034b778cd70ec1e9ee0cfc3f9741ee83e567de26abd35e79336334e879b3fc60e0029",
+  "networks": {
+    "1507410200090": {
+      "events": {},
+      "links": {},
+      "address": "0xc469ac8ee069096dc45f836635d9084f4214d18c",
+      "updated_at": 1507410280994
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1507410280994
+}
